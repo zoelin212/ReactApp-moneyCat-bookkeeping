@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;600;700&family=Heebo:wght@400;600;700&family=Itim&family=Shantell+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+    --white: #ffffff;
+    --gray: #E4E4E4;
+    --yellow: #F9E7CD;
+    --pink: #E4BBB2;
+    --green: #8A8B73;
+    --red: #CC7B69;
+    --purple: #A2807E;
+    --blue: #60768B;
+    --title: 'Shantell Sans', 'Itim', cursive;
+    --body: 'Heebo','Cabin', sans-serif;
+  }
+
+* {
+    box-sizing: border-box;
+    /* border: solid 1px red; */
+}
+
+body {
+    max-width: 100%;
+    margin: 0 auto;
+    font-family: var(--body);
+    padding: 0;
+    height: 100%;
+}
+
+@media (min-width: 420px) {
+    body {
+        max-width: 420px;
+        max-height: auto;
+        margin: 0 auto;
+    }
+   
+}

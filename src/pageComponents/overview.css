@@ -1,0 +1,128 @@
+.overviewPage {
+    background-color: var(--yellow);
+    position: relative;
+}
+
+header {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+header > a {
+    padding-left: unset;
+}
+.fa-house,
+.fa-gear {
+    font-size: 1.5rem;
+    margin: 1rem 1rem;
+}
+.sleeping {
+    width: 100%;
+    height: auto;
+    box-shadow: 4px -1px 4px 6px rgba(0, 0, 0, 0.25);
+}
+.contain {
+    min-height: calc(100vh - 30px);
+}
+footer {
+    background-color: var(--pink);
+    height: 50px;
+}
+
+.tray {
+    width: 13%;
+    position: absolute;
+    bottom: 9px;
+    left: 6%;
+}
+.overCat {
+    position: absolute;
+    right: 40%;
+    bottom: 0%;
+    width: 20%;
+}
+.calculater {
+    width: 13%;
+    position: absolute;
+    bottom: 10px;
+    right: 8%;
+}
+.imgBox {
+    max-width: 100%;
+    height: 100%;
+}
+
+.redBtn,
+.greenBtn {
+    border-radius:7px;
+    border: none;
+    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    align-self: center;
+    margin-bottom: 0.5rem;
+    width: 42%;
+    color: var(--white);
+    font-family: var(--title);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 44vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}   
+.redBtn {
+    background: var(--red);
+}
+.greenBtn {
+    background: var(--green);
+}
+.flex_direction_grid {
+    display: flex;
+    flex-direction: column;
+}
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+.total {
+    font-size: 1.3rem;
+}
+
+@media all and (max-width:370px){
+    .redBtn,
+    .greenBtn {
+        font-size: .8rem;
+    }
+    .total {
+        font-size: 1rem
+    }
+}
+@media all and (min-width:420px){
+    .overCat {
+        right: 163px;
+        bottom: 3px;
+        width: 80px;
+    }
+    .tray {
+        width: 56px;
+        bottom: 14px;
+        left: 34px;
+    }
+    .calculater {
+        width: 55px;
+        bottom: 14px;
+        right: 37px;
+    }
+    .sleeping {
+        box-shadow: 0px 0px 4px 6px rgb(0 0 0 / 25%);
+    }
+    .redBtn {
+        max-width: 160px;
+    }
+    .greenBtn {
+        max-width: 160px;
+    }
+}

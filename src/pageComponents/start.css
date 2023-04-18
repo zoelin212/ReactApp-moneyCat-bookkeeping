@@ -1,0 +1,59 @@
+.startPage {
+    background-color: var(--red);
+    width: 100%;
+    height: 100vh;
+    line-height: 1.5;
+    position: relative;
+}
+
+.startB {
+    display: flex;
+    justify-content: flex-end;
+}
+.lazyCat {
+    width: 75%;
+    height: auto;
+    position: absolute;
+    bottom: 9px;
+}
+.startForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.round2 {
+    border: none;
+    width: 106%;
+    height: 7rem;
+    border-top-left-radius: 90%;
+    position: absolute;
+    z-index: 0;
+    background-color: var(--yellow);
+    bottom: 0px;
+}
+
+.startMid {
+    padding-top: 6rem;
+    padding-bottom: 8rem;
+}
+
+.threeInput {
+    margin-top: 4.5rem;
+}
+
+@media all and (max-width:400px){
+    .round2 {
+        height: 6rem;
+    }
+    .lazyCat {
+        width: 45%;
+    }
+}
+@media all and (min-width:420px){
+    .round2 {
+        width: 420px;
+    }
+    .lazyCat {
+        width: 330px;
+    }
+}

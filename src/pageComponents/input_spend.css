@@ -1,0 +1,282 @@
+.inputSpendPage {
+    background-color: var(--yellow);
+    height: 100vh;
+    position: relative;
+    width: 100%;
+}
+
+.inputSpendPage > header {
+    position: relative;
+}
+
+.inputSpendPage > header > a {
+    color: var(--green)
+}
+
+/* .spend {
+    background: #FFFFFF;
+    border: 4px solid #8A8B73;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 8px;
+    width: 20vw;
+    color: #8A8B73;
+    text-align: center;
+    display: block;
+    padding-left: unset;
+}
+.income {
+    background: #BDBDBD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    width: 20vw;
+    color: var(--white);
+    text-align: center;
+    display: block;
+    padding-left: unset;
+} */
+.choice {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
+}
+
+.inputBox_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 2.5rem;
+}
+.inputBox_grid > button {
+    background-color: transparent;
+    border: none;
+}
+.date {
+    width: 31vw;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: none;
+}
+.note {
+    width: inherit;
+    padding: 0.57rem;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--white);
+}
+.note::placeholder {
+    color: #BDBDBD;
+}
+.addWrap {
+    background-color: var(--green);
+    padding: 1rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.row1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+}
+.row2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1rem;
+    margin: 1rem 0;
+    justify-items: end;
+}
+.row2 > button {
+    border: none;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    color: var(--green);
+    width: 20vw;
+    background-color: white;
+    padding: .2rem 0;
+}
+.display {
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+    font-size: 1.3rem;
+    color: var(--green);
+    width: 44vw;
+    display: inline-block;
+    padding: 0 0.5rem;
+}
+.row3 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    justify-items: end;
+}
+.digits {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.digits > button {
+    border: none;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    color: var(--green);
+    width: 20vw;
+    background-color: white;
+    padding: .2rem 0;
+}
+.rowRight {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.rowRight > button {
+    border: none;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    color: var(--green);
+    width: 20vw;
+    background-color: white;
+    
+}
+.dot {
+    padding: .2rem 0;
+}
+.add {
+    padding: 1.75rem 0;
+}
+.Meow,
+.Don {
+    position: fixed;
+    background-color: var(--yellow);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--yellow);
+    font-family: var(--title);
+    font-size: 1.5rem;
+    top: 0;
+    left: 0;
+}
+.svgBox {
+    width: 35vw;
+    height: auto;
+    position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+}
+.svgBox > p {
+    color: black;
+    margin-top: 0;
+    position: absolute;
+    top: 12px;
+    left: -41px;
+}
+#hand{
+    animation-duration: 1.2s;
+    animation-name: wave;
+    animation-timing-function: ease-in-out;
+    transform-origin: 35% 80% ;
+}
+
+@keyframes wave {
+0% {
+    transform: rotateZ(0deg)
+}
+
+50% {
+    transform: rotateZ(-15deg);
+    /* transform: rotateX(45deg); */
+}
+
+100% {
+    transform: rotateZ(0deg)
+}
+}
+
+#cat{
+    animation-duration: 1s;
+    animation-name: jump;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes jump {
+0% {
+    transform: translateY(0%);
+}
+
+50% {
+    transform: translateY(-15%);
+}
+
+100% {
+    transform: translateY(0%);
+}
+}
+
+#coin {
+    animation-duration: 1s;
+    animation-name: shake;
+    animation-timing-function: ease-in-out;        
+}
+@keyframes shake {
+0% {
+    transform:rotate(0deg)
+}
+
+50% {
+    transform:rotate(10deg)
+}
+
+100% {
+    transform:rotate(0deg)
+}
+}
+
+
+@media all and (max-width:400px){
+    .inputSpendPage {
+        width:auto;
+    }
+    .date,
+    .note {
+        font-size: .65rem;
+    }
+    .addWrap {
+        padding: .5rem;
+    }
+}
+@media all and (min-width:420px){
+   .choice > a {
+        max-width: 110px;
+   }
+   .addWrap {
+        width: 420px;
+   }
+   .date {
+        max-width: 120px;
+   }
+   .display {
+        width: 178px;
+   }
+   .row2 {
+        justify-items: start;
+   }
+   .row3 {
+        justify-items: start;
+   }
+   .digits > button {
+        max-width: 80px;
+   }
+   .row2 > button {
+        width: 80px;
+        justify-items: start;
+   }
+   .rowRight > button {
+        width: 100px;
+   }
+}
